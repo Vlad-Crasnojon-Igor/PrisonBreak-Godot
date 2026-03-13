@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://dpux7mjnmklvb"]
+
+[ext_resource type="Script" uid="uid://giig3j2assts" path="res://character_body_3d.gd" id="1_xhfnw"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_kpjcp"]
+radius = 0.4
+height = 1.6
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_kne1u"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xhfnw"]
+bg_color = Color(0.03529412, 0.35686275, 0.6, 0.5921569)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[node name="CharacterBody3D" type="CharacterBody3D" unique_id=418386000]
+script = ExtResource("1_xhfnw")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=315272749]
+shape = SubResource("CapsuleShape3D_kpjcp")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=238611]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+
+[node name="RayCast3D" type="RayCast3D" parent="Camera3D" unique_id=259753285]
+target_position = Vector3(0, 0, -2.5)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1470620830]
+mesh = SubResource("CapsuleMesh_kne1u")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1364735004]
+
+[node name="Panel" type="Panel" parent="." unique_id=47104182]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = -14.0
+offset_bottom = -14.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_xhfnw")
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="." unique_id=752590853]
+
+[node name="MesajUI" type="Label" parent="CanvasLayer2" unique_id=1255328666]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -49.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+text = "Test
+"

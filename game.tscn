@@ -1,0 +1,121 @@
+[gd_scene format=3 uid="uid://s26j3pp7883r"]
+
+[ext_resource type="PackedScene" uid="uid://dpux7mjnmklvb" path="res://Player.tscn" id="1_80nbo"]
+[ext_resource type="PackedScene" uid="uid://c7ek3puuv1td7" path="res://Assets/prison_door.glb" id="2_e2o6t"]
+[ext_resource type="PackedScene" uid="uid://btu5oeidslnps" path="res://Assets/dedsec-monitors/source/DEDSECMonitors.glb" id="4_7jktm"]
+[ext_resource type="PackedScene" uid="uid://xdgqeh8n7ovg" path="res://Assets/old_desk.glb" id="5_7jktm"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_80nbo"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_e2o6t"]
+sky_material = SubResource("ProceduralSkyMaterial_80nbo")
+
+[sub_resource type="Environment" id="Environment_feb5d"]
+background_mode = 2
+sky = SubResource("Sky_e2o6t")
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="Game" type="Node3D" unique_id=1207327878]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1017473010]
+environment = SubResource("Environment_feb5d")
+
+[node name="MainHall" type="CSGCombiner3D" parent="." unique_id=326348797]
+use_collision = true
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="MainHall" unique_id=1367265765]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.441924, 2.4100027, 19.736408)
+size = Vector3(25.089844, 5, 0.5)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="MainHall" unique_id=1553608499]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.12655067, 0, 0)
+use_collision = true
+size = Vector3(40, 0.2, 40)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="MainHall" unique_id=1669965516]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.12940884, 2.376102, -19.750547)
+size = Vector3(39.97857, 5, 0.5)
+
+[node name="CSGBox3D11" type="CSGBox3D" parent="MainHall" unique_id=2080222095]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.550525, 2.376102, -11.753683)
+size = Vector3(15.136337, 5, 0.5)
+
+[node name="CSGBox3D17" type="CSGBox3D" parent="MainHall" unique_id=1468768709]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.336986, 2.376102, -6.6757355)
+size = Vector3(15.136337, 5, 0.5)
+
+[node name="CSGBox3D18" type="CSGBox3D" parent="MainHall" unique_id=948650012]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.336986, 2.376102, 7.4238396)
+size = Vector3(15.136337, 5, 0.5)
+
+[node name="CSGBox3D12" type="CSGBox3D" parent="MainHall" unique_id=607125535]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.550525, 2.376102, 0.0019512177)
+size = Vector3(15.136337, 5, 0.5)
+
+[node name="CSGBox3D13" type="CSGBox3D" parent="MainHall" unique_id=886104965]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.550525, 2.376102, 19.74706)
+size = Vector3(15.136337, 5, 0.5)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="MainHall" unique_id=1495566233]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.926265, 2.390714, 0)
+size = Vector3(0.5, 5, 40)
+
+[node name="CSGBox3D14" type="CSGBox3D" parent="MainHall" unique_id=623490275]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.885742, 2.390714, 0)
+size = Vector3(0.5, 5, 40)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="MainHall" unique_id=462602079]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.6261044, 2.401424, 0)
+size = Vector3(0.5, 5, 40)
+
+[node name="CSGBox3D15" type="CSGBox3D" parent="MainHall" unique_id=269327558]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.739544, 2.401424, 0)
+size = Vector3(0.5, 5, 40)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="MainHall" unique_id=1261473290]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -4.6936083, 1.1493084, 13.0230465)
+operation = 2
+size = Vector3(1.5, 2.1034179, 1.052)
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="MainHall" unique_id=292619023]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -4.6936083, 1.1493084, -0.9156642)
+operation = 2
+size = Vector3(1.5, 2.1034179, 1.052)
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="MainHall" unique_id=915460187]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -4.6936083, 1.1493084, -12.056258)
+operation = 2
+size = Vector3(1.5, 2.1034179, 1.052)
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="MainHall" unique_id=278496994]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4.852114, 1.1493084, -6.250525)
+operation = 2
+size = Vector3(1.5, 2.1034179, 1.052)
+
+[node name="CSGBox3D16" type="CSGBox3D" parent="MainHall" unique_id=1204986862]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4.852114, 1.1493084, -15.579515)
+operation = 2
+size = Vector3(1.5, 2.1034179, 1.052)
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="MainHall" unique_id=2119443831]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4.852114, 1.1493084, 6.7823515)
+operation = 2
+size = Vector3(1.5, 2.1034179, 1.052)
+
+[node name="CharacterBody3D" parent="MainHall" unique_id=418386000 instance=ExtResource("1_80nbo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2639898, 1.0144584, 18.45351)
+
+[node name="Sketchfab_Scene" parent="." unique_id=38959719 instance=ExtResource("2_e2o6t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.19932762, 1.1338315, 19.479929)
+
+[node name="Security" type="CSGCombiner3D" parent="." unique_id=2141900231]
+use_collision = true
+
+[node name="Sketchfab_Scene2" parent="Security" unique_id=1960185800 instance=ExtResource("5_7jktm")]
+transform = Transform3D(-6.556708e-08, 0, 1.5, 0, 1.5, 0, -1.5, 0, -6.556708e-08, -18.999298, 0.5184768, 13.861758)
+
+[node name="DEDSECMonitors" parent="Security" unique_id=1282289308 instance=ExtResource("4_7jktm")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -19.117783, 1.0528775, 13.292785)
