@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cmcsly5osni77"]
+
+[ext_resource type="Script" uid="uid://u4ylk866w4h1" path="res://zombie.gd" id="1_uiaus"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uiaus"]
+albedo_color = Color(1, 0, 0.34509805, 1)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_050lg"]
+
+[node name="Zombie" type="CharacterBody3D" unique_id=851235931]
+script = ExtResource("1_uiaus")
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="." unique_id=301778135]
+material = SubResource("StandardMaterial3D_uiaus")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="." unique_id=180413238]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1306225649]
+shape = SubResource("CylinderShape3D_050lg")

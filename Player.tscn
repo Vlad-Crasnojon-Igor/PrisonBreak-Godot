@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dpux7mjnmklvb"]
 
 [ext_resource type="Script" uid="uid://giig3j2assts" path="res://character_body_3d.gd" id="1_xhfnw"]
+[ext_resource type="AudioStream" uid="uid://cqo3oryqkmdu1" path="res://38873__swuing__footstep-concrete.wav" id="2_kpjcp"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_kpjcp"]
 radius = 0.4
@@ -15,7 +16,7 @@ corner_radius_top_right = 50
 corner_radius_bottom_right = 50
 corner_radius_bottom_left = 50
 
-[node name="CharacterBody3D" type="CharacterBody3D" unique_id=418386000]
+[node name="Player" type="CharacterBody3D" unique_id=418386000 groups=["Player"]]
 script = ExtResource("1_xhfnw")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=315272749]
@@ -26,6 +27,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 
 [node name="RayCast3D" type="RayCast3D" parent="Camera3D" unique_id=259753285]
 target_position = Vector3(0, 0, -2.5)
+
+[node name="Felinar" type="SpotLight3D" parent="Camera3D" unique_id=1757659055]
+light_energy = 0.5
+spot_range = 10.0
+spot_angle_attenuation = 0.07694675
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1470620830]
 mesh = SubResource("CapsuleMesh_kne1u")
@@ -63,3 +69,58 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 5
 text = "Test
 "
+
+[node name="MeniuSeif" type="MenuBar" parent="CanvasLayer2" unique_id=485883543]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="CanvasLayer2/MeniuSeif" unique_id=299647789]
+layout_mode = 0
+offset_left = 575.0
+offset_top = 138.0
+offset_right = 680.0
+offset_bottom = 161.0
+text = "Introdu codul"
+
+[node name="InputCod" type="LineEdit" parent="CanvasLayer2/MeniuSeif" unique_id=960096082]
+layout_mode = 0
+offset_left = 709.0
+offset_top = 136.0
+offset_right = 777.5
+offset_bottom = 167.0
+
+[node name="ButtonOpen" type="Button" parent="CanvasLayer2/MeniuSeif" unique_id=2116539350]
+layout_mode = 0
+offset_left = 607.0
+offset_top = 189.0
+offset_right = 657.0
+offset_bottom = 220.0
+text = "Open
+"
+
+[node name="ButtonClose" type="Button" parent="CanvasLayer2/MeniuSeif" unique_id=1816346939]
+layout_mode = 0
+offset_left = 718.0
+offset_top = 192.0
+offset_right = 778.0
+offset_bottom = 223.0
+text = "Cancel
+"
+
+[node name="BaterieUI" type="Label" parent="CanvasLayer2" unique_id=727725855]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -23.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="SunetPasi" type="AudioStreamPlayer" parent="." unique_id=1926757784]
+stream = ExtResource("2_kpjcp")
+
+[connection signal="pressed" from="CanvasLayer2/MeniuSeif/ButtonOpen" to="." method="_on_button_open_pressed"]
+[connection signal="pressed" from="CanvasLayer2/MeniuSeif/ButtonClose" to="." method="_on_button_close_pressed"]

@@ -5,10 +5,10 @@
 [ext_resource type="Texture2D" uid="uid://vbogleav6i2c" path="res://Assets/prison_door_1.png" id="2_13hoq"]
 [ext_resource type="Texture2D" uid="uid://dovkcisj3846o" path="res://Assets/PSXWoodenStool_image (7).png" id="2_b342q"]
 [ext_resource type="Texture2D" uid="uid://7tcd3y2m4pbd" path="res://Assets/prison_door_2.png" id="3_8lkn1"]
-[ext_resource type="Texture2D" uid="uid://bnal712xs7hhy" path="res://Assets/light_ceiling_lamp_-_15mb_0.png" id="3_pg6dg"]
-[ext_resource type="Texture2D" uid="uid://df4vp645h5yrx" path="res://Assets/light_ceiling_lamp_-_15mb_2.png" id="4_dcxah"]
-[ext_resource type="Texture2D" uid="uid://bfiyypwhryf" path="res://Assets/light_ceiling_lamp_-_15mb_1.png" id="5_l0e2k"]
-[ext_resource type="Texture2D" uid="uid://de30vfl0j3bri" path="res://Assets/light_ceiling_lamp_-_15mb_3.png" id="6_4lul5"]
+[ext_resource type="Texture2D" uid="uid://bnal712xs7hhy" path="res://Assets/LIGHT_CEILING/light_ceiling_lamp_-_15mb_0.png" id="3_pg6dg"]
+[ext_resource type="Texture2D" uid="uid://df4vp645h5yrx" path="res://Assets/LIGHT_CEILING/light_ceiling_lamp_-_15mb_2.png" id="4_dcxah"]
+[ext_resource type="Texture2D" uid="uid://bfiyypwhryf" path="res://Assets/LIGHT_CEILING/light_ceiling_lamp_-_15mb_1.png" id="5_l0e2k"]
+[ext_resource type="Texture2D" uid="uid://de30vfl0j3bri" path="res://Assets/LIGHT_CEILING/light_ceiling_lamp_-_15mb_3.png" id="6_4lul5"]
 [ext_resource type="Script" uid="uid://bdv5ty8pmsgkj" path="res://omni_light_3d.gd" id="7_dcxah"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_b342q"]
@@ -584,7 +584,7 @@ mesh = SubResource("ArrayMesh_l6ooc")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Lumina" unique_id=638213202]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.18262863, 0)
-light_energy = 0.3
+light_energy = 0.1
 shadow_enabled = true
 omni_attenuation = 1.76
 script = ExtResource("7_dcxah")
