@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://det83oni4p00g"
+path="res://.godot/imported/840636__artninja__monster_berserker_fate_heavens_feel_low_breaths.wav-1ec27b6039b6aa36f42fcc49a6d66ca3.sample"
+
+[deps]
+
+source_file="res://audio & fonts/840636__artninja__monster_berserker_fate_heavens_feel_low_breaths.wav"
+dest_files=["res://.godot/imported/840636__artninja__monster_berserker_fate_heavens_feel_low_breaths.wav-1ec27b6039b6aa36f42fcc49a6d66ca3.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

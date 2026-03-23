@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cqca67cbip882"
+path="res://.godot/imported/705469__fosdork__roar.wav-eaf5f599cdb699577d0af2343a3da7b0.sample"
+
+[deps]
+
+source_file="res://audio & fonts/705469__fosdork__roar.wav"
+dest_files=["res://.godot/imported/705469__fosdork__roar.wav-eaf5f599cdb699577d0af2343a3da7b0.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

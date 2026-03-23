@@ -1,0 +1,67 @@
+[gd_scene format=3 uid="uid://crrtdw024yu7j"]
+
+[ext_resource type="Script" uid="uid://u1f3j2qslrvd" path="res://scripturi/game_over.gd" id="1_6pabp"]
+[ext_resource type="FontFile" uid="uid://ccmswjn1te04i" path="res://audio & fonts/SpecialElite-Regular.ttf" id="2_ooyig"]
+[ext_resource type="Script" uid="uid://cmsfvn56jldrf" path="res://scripturi/button_reload.gd" id="3_0sgxn"]
+[ext_resource type="AudioStream" uid="uid://b5uc7lnfubemb" path="res://audio & fonts/76376__deleted_user_877451__game_over.wav" id="4_p3ufs"]
+
+[node name="game_over" type="Control" unique_id=277242258]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6pabp")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=815996022]
+layout_mode = 0
+offset_right = 1159.0
+offset_bottom = 653.0
+color = Color(0, 0, 0, 1)
+
+[node name="TextureRect" type="TextureRect" parent="ColorRect" unique_id=313694864]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="." unique_id=474294746]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -185.5
+offset_top = -37.25
+offset_right = 185.5
+offset_bottom = 37.25
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.72156864, 0.047058824, 0.02745098, 1)
+theme_override_fonts/font = ExtResource("2_ooyig")
+theme_override_font_sizes/font_size = 70
+text = "GAME OVER"
+
+[node name="Button" type="Button" parent="." unique_id=957351564]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -44.0
+offset_top = -46.0
+offset_right = 62.0
+offset_bottom = -15.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("2_ooyig")
+theme_override_font_sizes/font_size = 25
+text = "REÎNCEARCĂ"
+script = ExtResource("3_0sgxn")
+
+[node name="SunetMoarte" type="AudioStreamPlayer" parent="." unique_id=196610183]
+stream = ExtResource("4_p3ufs")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_button_pressed"]

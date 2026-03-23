@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://dr2p6exe2dhkp"]
+
+[ext_resource type="PackedScene" uid="uid://dki6248wl1qif" path="res://Zombie Scream.fbx" id="1_bnco5"]
+
+[node name="Zombie Scream" unique_id=872894313 instance=ExtResource("1_bnco5")]
