@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dyswptwuvfufp"]
+
+[ext_resource type="Script" uid="uid://cwed5jrmh638m" path="res://scripturi/interact.gd" id="1_onfvj"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_onfvj"]
+
+[node name="ComponentaElectrica" type="StaticBody3D" unique_id=6039953 groups=["Componenta"]]
+script = ExtResource("1_onfvj")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=384059412]
+shape = SubResource("BoxShape3D_onfvj")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1313888989]

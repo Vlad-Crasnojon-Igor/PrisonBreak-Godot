@@ -1,0 +1,11 @@
+Model Information:
+* title:	PBR Combination Safe (Free)
+* source:	https://sketchfab.com/3d-models/pbr-combination-safe-free-0fbfeb546e56452a9e1f3863931eff39
+* author:	Justin.Foley (https://sketchfab.com/Justin.Foley)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "PBR Combination Safe (Free)" (https://sketchfab.com/3d-models/pbr-combination-safe-free-0fbfeb546e56452a9e1f3863931eff39) by Justin.Foley (https://sketchfab.com/Justin.Foley) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

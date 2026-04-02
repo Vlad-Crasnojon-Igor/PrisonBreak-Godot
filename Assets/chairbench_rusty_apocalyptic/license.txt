@@ -1,0 +1,11 @@
+Model Information:
+* title:	Chairbench Rusty apocalyptic
+* source:	https://sketchfab.com/3d-models/chairbench-rusty-apocalyptic-689e21e0d5fb4614a54dc8486b43dd1c
+* author:	AnishRoyalinc (https://sketchfab.com/anishdombale878)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Chairbench Rusty apocalyptic" (https://sketchfab.com/3d-models/chairbench-rusty-apocalyptic-689e21e0d5fb4614a54dc8486b43dd1c) by AnishRoyalinc (https://sketchfab.com/anishdombale878) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

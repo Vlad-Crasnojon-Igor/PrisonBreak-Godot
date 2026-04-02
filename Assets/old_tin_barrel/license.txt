@@ -1,0 +1,11 @@
+Model Information:
+* title:	Old tin barrel
+* source:	https://sketchfab.com/3d-models/old-tin-barrel-20f1ebee339a4b46b9e547782e2aaba9
+* author:	3dhdscan (https://sketchfab.com/3dhdscan)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Old tin barrel" (https://sketchfab.com/3d-models/old-tin-barrel-20f1ebee339a4b46b9e547782e2aaba9) by 3dhdscan (https://sketchfab.com/3dhdscan) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://u1f3j2qslrvd" path="res://scripturi/game_over.gd" id="1_6pabp"]
 [ext_resource type="FontFile" uid="uid://ccmswjn1te04i" path="res://audio & fonts/SpecialElite-Regular.ttf" id="2_ooyig"]
 [ext_resource type="Script" uid="uid://cmsfvn56jldrf" path="res://scripturi/button_reload.gd" id="3_0sgxn"]
-[ext_resource type="AudioStream" uid="uid://b5uc7lnfubemb" path="res://audio & fonts/76376__deleted_user_877451__game_over.wav" id="4_p3ufs"]
+[ext_resource type="AudioStream" uid="uid://b5uc7lnfubemb" path="res://audio & fonts/76376__deleted_user_877451__game_over.ogg" id="4_p3ufs"]
 
 [node name="game_over" type="Control" unique_id=277242258]
 layout_mode = 3

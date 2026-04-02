@@ -1,0 +1,11 @@
+Model Information:
+* title:	Bulletin Board
+* source:	https://sketchfab.com/3d-models/bulletin-board-9a2ef796667449cfbace0ff446557738
+* author:	lydia.la (https://sketchfab.com/lydia.lampridou)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Bulletin Board" (https://sketchfab.com/3d-models/bulletin-board-9a2ef796667449cfbace0ff446557738) by lydia.la (https://sketchfab.com/lydia.lampridou) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

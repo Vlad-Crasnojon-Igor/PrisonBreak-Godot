@@ -1,0 +1,11 @@
+Model Information:
+* title:	Decorator vase
+* source:	https://sketchfab.com/3d-models/decorator-vase-8c9a6c5188694c70b3042f417ce4e700
+* author:	Marco De Simone (https://sketchfab.com/marcodesimone888)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Decorator vase" (https://sketchfab.com/3d-models/decorator-vase-8c9a6c5188694c70b3042f417ce4e700) by Marco De Simone (https://sketchfab.com/marcodesimone888) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

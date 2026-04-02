@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://cthvctqriqkex"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fm7it"]
+
+[node name="Manete" type="Node3D" unique_id=1800776387]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=511808911]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="CSGBox3D" unique_id=1035737643 groups=["Maneta"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CSGBox3D/StaticBody3D" unique_id=1885955818]
+shape = SubResource("BoxShape3D_fm7it")

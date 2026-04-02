@@ -1,0 +1,11 @@
+Model Information:
+* title:	old cupboard
+* source:	https://sketchfab.com/3d-models/old-cupboard-5e4cc0f33e584e4791a0b66537ad1a9b
+* author:	HASSAN (https://sketchfab.com/7ASSAN)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "old cupboard" (https://sketchfab.com/3d-models/old-cupboard-5e4cc0f33e584e4791a0b66537ad1a9b) by HASSAN (https://sketchfab.com/7ASSAN) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

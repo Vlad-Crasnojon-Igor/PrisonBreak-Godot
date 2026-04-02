@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://grf4gu34hway"]
+
+[ext_resource type="Script" uid="uid://rjcg6errbqcg" path="res://scripturi/panou_electric.gd" id="1_bqmik"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_nrh2r"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bqmik"]
+
+[node name="PanouElectric" type="StaticBody3D" unique_id=2146001420 groups=["Panou"]]
+script = ExtResource("1_bqmik")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1042398120]
+mesh = SubResource("BoxMesh_nrh2r")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2045065354]
+shape = SubResource("BoxShape3D_bqmik")

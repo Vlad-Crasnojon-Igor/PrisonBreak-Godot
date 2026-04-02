@@ -1,45 +1,63 @@
 extends Node
 
-var baterie_curenta = 3
-var baterie_maxima = 5
-var durata_baterie = 30.0 
-var timer_baterie = durata_baterie
+var baterii_maxime = 5
+var baterii_curente = 4 
+var timp_per_baterie = 30.0
+var energie_activa = 30.0 
+var este_aprinsa = false
 
-@onready var felinar = $"../Camera3D/Felinar" 
-@onready var baterie_ui = $"../CanvasLayer2/BaterieUI"
-@onready var player = get_parent() 
+@onready var lumina = %Felinar
+@onready var text_ui = %TextBaterie
 
 func _ready():
+	if lumina:
+		lumina.hide()
 	actualizeaza_ui()
-	
+
 func _process(delta):
-	if felinar == null: return 
-	
-	if baterie_curenta > 0 and felinar.visible:
-		timer_baterie -= delta 
-		if timer_baterie <= 0:
-			baterie_curenta -= 1 
-			timer_baterie = durata_baterie 
-			actualizeaza_ui()
+	if este_aprinsa:
+		energie_activa -= delta 
+		
+		if energie_activa < 5.0 and energie_activa > 0.0:
+			if lumina: lumina.light_energy = randf_range(0.2, 2.0)
+		else:
+			if lumina: lumina.light_energy = 2.0 
 			
-			if baterie_curenta <= 0: 
-				felinar.visible = false 
+		if energie_activa <= 0:
+			energie_activa = 0
+			consuma_baterie_rezerva()
+
+func consuma_baterie_rezerva():
+	if baterii_curente > 0:
+		baterii_curente -= 1
+		energie_activa = timp_per_baterie
+		actualizeaza_ui()
+	else:
+		stinge_lanterna()
 
 func comuta_lanterna():
-	if felinar == null: return
-	if baterie_curenta > 0:
-		felinar.visible = !felinar.visible 
-	else:
-		player.afiseaza_mesaj("Fara baterie!")
+	if este_aprinsa:
+		stinge_lanterna()
+	elif energie_activa > 0 or baterii_curente > 0:
+		aprinde_lanterna()
+		if energie_activa <= 0 and baterii_curente > 0:
+			consuma_baterie_rezerva()
 
-func actualizeaza_ui():
-	if baterie_ui:
-		baterie_ui.text = "Baterie: " + str(baterie_curenta) + "/" + str(baterie_maxima)
+func aprinde_lanterna():
+	este_aprinsa = true
+	if lumina: lumina.show()
+
+func stinge_lanterna():
+	este_aprinsa = false
+	if lumina: lumina.hide()
 
 func incarca_bateria() -> bool:
-	if baterie_curenta < baterie_maxima:
-		baterie_curenta += 1
+	if baterii_curente < baterii_maxime:
+		baterii_curente += 1
 		actualizeaza_ui()
-		return true
-	else:
-		return false
+		return true 
+	return false 
+
+func actualizeaza_ui():
+	if text_ui:
+		text_ui.text = "Baterii: " + str(baterii_curente) + "/" + str(baterii_maxime)

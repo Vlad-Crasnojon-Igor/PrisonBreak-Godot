@@ -1,0 +1,81 @@
+[gd_scene format=3 uid="uid://ddcu1swrpxwqg"]
+
+[ext_resource type="Script" uid="uid://cn7j2nkst6fcn" path="res://scripturi/quest_ui.gd" id="1_y361u"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y361u"]
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mxsos"]
+bg_color = Color(0.7529412, 0.7647059, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[node name="QuestUI" type="CanvasLayer" unique_id=1357370824 groups=["InterfataQuest"]]
+script = ExtResource("1_y361u")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=137712852]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=536401813]
+layout_mode = 2
+
+[node name="Titlu" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1035839154]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+text = " JURNAL DE EVADARE "
+
+[node name="Task1" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1117351332]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+
+[node name="Task2" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1041094064]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+
+[node name="Task3" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1739204567]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+
+[node name="Task4" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1586996930]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+
+[node name="Task5" type="Label" parent="MarginContainer/VBoxContainer" unique_id=2032504074]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+
+[node name="Task6" type="Label" parent="MarginContainer/VBoxContainer" unique_id=626146123]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+
+[node name="BaraReparatie" type="ProgressBar" parent="." unique_id=1203696718]
+unique_name_in_owner = true
+visible = false
+custom_minimum_size = Vector2(300, 20)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -2.0
+offset_top = -13.5
+offset_right = 2.0
+offset_bottom = 13.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_y361u")
+theme_override_styles/fill = SubResource("StyleBoxFlat_mxsos")
+show_percentage = false

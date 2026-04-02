@@ -1,0 +1,565 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 274,
+      "max": [
+        0.25,
+        0.2586328685283661,
+        2.0000159740448
+      ],
+      "min": [
+        -0.25,
+        -0.25,
+        1.615285873413086e-05
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 3288,
+      "componentType": 5126,
+      "count": 274,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 274,
+      "max": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0,
+        1.0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 274,
+      "max": [
+        0.996552586555481,
+        0.9792575240135193
+      ],
+      "min": [
+        0.0034473836421966553,
+        0.0034473836421966553
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 2192,
+      "componentType": 5126,
+      "count": 274,
+      "max": [
+        0.996552586555481,
+        0.9792575240135193
+      ],
+      "min": [
+        0.0034473836421966553,
+        0.0034473836421966553
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 4384,
+      "componentType": 5126,
+      "count": 274,
+      "max": [
+        0.996552586555481,
+        0.9792575240135193
+      ],
+      "min": [
+        0.0034473836421966553,
+        0.0034473836421966553
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 588,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 6576,
+      "componentType": 5126,
+      "count": 334,
+      "max": [
+        0.4548903703689575,
+        0.012744814157485962,
+        1.979533076286316
+      ],
+      "min": [
+        -0.004906386137008667,
+        -0.008940309286117554,
+        0.02516406960785389
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 10584,
+      "componentType": 5126,
+      "count": 334,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 4384,
+      "componentType": 5126,
+      "count": 334,
+      "max": [
+        1.0,
+        1.0,
+        0.004777506459504366,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -0.004079022444784641,
+        -1.0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 6576,
+      "componentType": 5126,
+      "count": 334,
+      "max": [
+        0.9663045406341553,
+        0.9982292652130127
+      ],
+      "min": [
+        0.0017707347869873047,
+        0.0017707347869873047
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 9248,
+      "componentType": 5126,
+      "count": 334,
+      "max": [
+        0.9663045406341553,
+        0.9982292652130127
+      ],
+      "min": [
+        0.0017707347869873047,
+        0.0017707347869873047
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 11920,
+      "componentType": 5126,
+      "count": 334,
+      "max": [
+        0.9663045406341553,
+        0.9982292652130127
+      ],
+      "min": [
+        0.0017707347869873047,
+        0.0017707347869873047
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 2352,
+      "componentType": 5125,
+      "count": 768,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 141,
+      "max": [
+        4.360000133514404
+      ],
+      "min": [
+        0.0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 141,
+      "max": [
+        -0.2813754081726074,
+        0.6487124562263489,
+        0.6487125158309937,
+        0.7071064710617065
+      ],
+      "min": [
+        -0.7071065306663513,
+        0.0006192388827912509,
+        0.0006192389409989119,
+        0.28137528896331787
+      ],
+      "type": "VEC4"
+    }
+  ],
+  "animations": [
+    {
+      "channels": [
+        {
+          "sampler": 0,
+          "target": {
+            "node": 6,
+            "path": "rotation"
+          }
+        }
+      ],
+      "name": "SM_Locker_Door|SM_Locker_DoorAction",
+      "samplers": [
+        {
+          "input": 14,
+          "interpolation": "LINEAR",
+          "output": 15
+        }
+      ]
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Jesus Fernandez Garcia (https://sketchfab.com/jamyzgenius)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/locker-dirty-low-poly-free-a408b310d12d434eaccadc5d63d315b5",
+      "title": "Locker Dirty - Low Poly - [FREE]"
+    },
+    "generator": "Sketchfab-12.66.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 5424,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 14592,
+      "byteOffset": 5424,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 14592,
+      "byteOffset": 20016,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 9728,
+      "byteOffset": 34608,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 564,
+      "byteOffset": 44336,
+      "name": "floatBufferViews"
+    },
+    {
+      "buffer": 0,
+      "byteLength": 2256,
+      "byteOffset": 44900,
+      "byteStride": 16,
+      "name": "floatBufferViews"
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 47156,
+      "uri": "scene.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/M_Locker_JFG_baseColor.png"
+    },
+    {
+      "uri": "textures/M_Locker_JFG_metallicRoughness.png"
+    },
+    {
+      "uri": "textures/M_Locker_JFG_normal.png"
+    },
+    {
+      "uri": "textures/M_Locker_Door_JFG_baseColor.png"
+    },
+    {
+      "uri": "textures/M_Locker_Door_JFG_metallicRoughness.png"
+    },
+    {
+      "uri": "textures/M_Locker_Door_JFG_normal.png"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "M_Locker_JFG",
+      "normalTexture": {
+        "index": 2
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 1
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "M_Locker_Door_JFG",
+      "normalTexture": {
+        "index": 5
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 3
+        },
+        "metallicRoughnessTexture": {
+          "index": 4
+        }
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "SM_Locker_M_Locker_JFG_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3,
+            "TEXCOORD_1": 4,
+            "TEXCOORD_2": 5
+          },
+          "indices": 6,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "SM_Locker_Door_M_Locker_Door_JFG_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 8,
+            "POSITION": 7,
+            "TANGENT": 9,
+            "TEXCOORD_0": 10,
+            "TEXCOORD_1": 11,
+            "TEXCOORD_2": 12
+          },
+          "indices": 13,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "SM_Locker_1_JFG.fbx"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "Object_2"
+    },
+    {
+      "children": [
+        4,
+        6
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        5
+      ],
+      "name": "SM_Locker",
+      "rotation": [
+        -0.7071068286895752,
+        0.0,
+        0.0,
+        0.7071067094802856
+      ],
+      "scale": [
+        100.0,
+        100.0,
+        100.0
+      ]
+    },
+    {
+      "mesh": 0,
+      "name": "SM_Locker_M_Locker_JFG_0"
+    },
+    {
+      "children": [
+        7
+      ],
+      "name": "SM_Locker_Door",
+      "rotation": [
+        -0.7071065902709961,
+        0.0006192389409989119,
+        0.0006192389992065728,
+        0.7071065306663513
+      ],
+      "scale": [
+        100.0,
+        100.0,
+        100.0
+      ],
+      "translation": [
+        -22.242773056030273,
+        0.0,
+        -25.46561050415039
+      ]
+    },
+    {
+      "mesh": 1,
+      "name": "SM_Locker_Door_M_Locker_Door_JFG_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    },
+    {
+      "sampler": 0,
+      "source": 3
+    },
+    {
+      "sampler": 0,
+      "source": 4
+    },
+    {
+      "sampler": 0,
+      "source": 5
+    }
+  ]
+}

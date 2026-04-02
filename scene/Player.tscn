@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://dpux7mjnmklvb"]
 
 [ext_resource type="Script" uid="uid://giig3j2assts" path="res://scripturi/Player.gd" id="1_xhfnw"]
-[ext_resource type="AudioStream" uid="uid://cqo3oryqkmdu1" path="res://audio & fonts/38873__swuing__footstep-concrete.wav" id="2_kpjcp"]
+[ext_resource type="AudioStream" uid="uid://cqo3oryqkmdu1" path="res://audio & fonts/38873__swuing__footstep-concrete.ogg" id="2_kpjcp"]
 [ext_resource type="Script" uid="uid://br2f2w2fpc847" path="res://scripturi/sistem_lanterna.gd" id="3_tdwth"]
-[ext_resource type="Script" path="res://scene/sistem_inventar.gd" id="4_inv"]
-[ext_resource type="Script" path="res://scene/sistem_interactiune.gd" id="5_int"]
+[ext_resource type="Script" uid="uid://cg13dgi6ampki" path="res://scripturi/sistem_inventar.gd" id="4_inv"]
+[ext_resource type="Script" uid="uid://cd8wubkkn42pl" path="res://scripturi/sistem_interactiune.gd" id="5_int"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_kpjcp"]
 radius = 0.4
@@ -29,12 +29,18 @@ shape = SubResource("CapsuleShape3D_kpjcp")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 
 [node name="RayCast3D" type="RayCast3D" parent="Camera3D" unique_id=259753285]
-target_position = Vector3(0, 0, -2.5)
+target_position = Vector3(0, 0, -3)
 
 [node name="Felinar" type="SpotLight3D" parent="Camera3D" unique_id=1757659055]
-light_energy = 0.5
-spot_range = 10.0
-spot_angle_attenuation = 0.07694675
+unique_name_in_owner = true
+light_energy = 2.0
+light_volumetric_fog_energy = 2.0
+shadow_enabled = true
+shadow_blur = 2.0
+spot_range = 18.0
+spot_attenuation = 2.0
+spot_angle = 40.0
+spot_angle_attenuation = 2.0
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1470620830]
 mesh = SubResource("CapsuleMesh_kne1u")
@@ -110,7 +116,8 @@ offset_bottom = 223.0
 text = "Cancel
 "
 
-[node name="BaterieUI" type="Label" parent="CanvasLayer2" unique_id=727725855]
+[node name="TextBaterie" type="Label" parent="CanvasLayer2" unique_id=727725855]
+unique_name_in_owner = true
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
@@ -128,12 +135,11 @@ stream = ExtResource("2_kpjcp")
 [node name="SistemLanterna" type="Node3D" parent="." unique_id=613044814]
 script = ExtResource("3_tdwth")
 
-[node name="SistemInventar" type="Node" parent="."]
+[node name="SistemInventar" type="Node" parent="." unique_id=294604974]
 script = ExtResource("4_inv")
 
-[node name="SistemInteractiune" type="Node" parent="."]
+[node name="SistemInteractiune" type="Node" parent="." unique_id=1138161025]
 script = ExtResource("5_int")
-
 
 [connection signal="pressed" from="CanvasLayer2/MeniuSeif/ButtonOpen" to="." method="_on_button_open_pressed"]
 [connection signal="pressed" from="CanvasLayer2/MeniuSeif/ButtonClose" to="." method="_on_button_close_pressed"]

@@ -13,7 +13,6 @@ var mouse_sensitivity = 0.002
 
 @onready var sistem_inventar = $SistemInventar
 @onready var sistem_interactiune = $SistemInteractiune
-
 @onready var sistem_lanterna = $SistemLanterna
 @onready var sunet_pasi = $SunetPasi
 @onready var camera = $Camera3D
@@ -25,7 +24,6 @@ var mouse_sensitivity = 0.002
 
 
 func _ready():
-	randomize()
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	mesaj_ui.hide()
 	meniu_seif.hide()
@@ -100,6 +98,8 @@ func _on_button_open_pressed():
 	if input_cod.text == "421":
 		afiseaza_mesaj("Cod Corect! Ai obtinut Cartela Rosie.")
 		sistem_inventar.are_cartela = true
+		var quest_ui = get_tree().get_first_node_in_group("InterfataQuest")
+		if quest_ui: quest_ui.deschide_seif()
 		meniu_seif.hide() 
 		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED) 
 		input_cod.text = "" 
